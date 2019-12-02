@@ -2,21 +2,17 @@ import React from 'react'
 import axios from 'axios' 
 import { Grid, Image } from 'semantic-ui-react'
 
-
-
-
+const ig = (process.env.REACT_APP_IG_URL)
 
 
 class Grams extends React.Component {
   state = {
     images: [],
     isVisible: true,
-    
-    
   }
   
-  componentDidMount() { 
-    axios.get("https://api.instagram.com/v1/users/1341161557/media/recent/?access_token=1341161557.4dfa049.9df7c290ccaf45c9aacbb9ed4816d242")
+  componentDidMount() {  
+    axios.get({ig})
     .then(res => {
       this.setState({images: res.data.data})
     })

@@ -6,7 +6,7 @@ import Menu from './components/Menu'
 import Events from './components/Events'
 import NavBar from './components/NavBar'
 import {Container} from 'semantic-ui-react'
-import './App.css';
+import './App.css'
 
 function App() {
   return (
