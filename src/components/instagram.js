@@ -2,7 +2,6 @@ import React from 'react'
 import axios from 'axios' 
 import { Grid, Image } from 'semantic-ui-react'
 
-const ig = (process.env.REACT_APP_IG_URL)
 
 
 class Grams extends React.Component {
@@ -12,7 +11,7 @@ class Grams extends React.Component {
   }
   
   componentDidMount() {  
-    axios.get({ig})
+    axios.get(process.env.REACT_APP_IG_URL)
     .then(res => {
       this.setState({images: res.data.data})
     })
@@ -28,19 +27,18 @@ class Grams extends React.Component {
 render() {
   const {images, isVisible } = this.state
   // const pictures = images.forEach((image)=>console.log(image.thumbnail.url,image.id))
-   console.log(this.state.images[0])
-   console.log(this.state.images)
+
   return (
     <Grid>
-    <Grid.Row columns={6} style={{padding: "0px", justifyContent: "center"}} >  
+    <Grid.Row columns={6} style={{padding: "0px", justifyContent: "center"}} stackable="true">  
     { images.map(image => 
      <Image 
       className="image"
       data-key={image}
       src={image.images.standard_resolution.url}
       key={image.id}
-      width="150px"
-      height="150px"
+      width="200em"
+      height="200em"
    />
      )}
      

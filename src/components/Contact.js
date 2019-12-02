@@ -11,7 +11,7 @@ const Contact = () => (
     </div>
     <div className="emailBox">
      <Header as="h3" className="contactHead">Drop Us A Email</Header>
-     <a className="email" href="mailto:yourEmailhere@gmail.com?Subject=Hello%20Chris">YourEmailhere@gmail.com</a>
+     <a className="email" href="mailto:?Subject=Hello%20Chris">YourEmailhere@gmail.com</a>
     </div>
     <Header as="h3" className="socialFollows">
       <SocialFollows/>
