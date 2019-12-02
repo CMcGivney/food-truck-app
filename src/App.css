@@ -65,7 +65,7 @@ background-color: black;
   display: grid;
   padding: 1em;
   grid-template-columns: 1fr;
-  grid-template-rows: 5em 10em 10em;
+  grid-template-rows: 8em 10em 10em;
   grid-template-areas: "header" "email" "social";
   justify-content: center;
   align-items: end;
@@ -74,7 +74,6 @@ background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-;
   min-height: 55em;
   /* opacity: 0.9; */
   -webkit-background-size: cover;
@@ -85,14 +84,11 @@ background-color: black;
 .headerCont {
   background-color: grey;
   opacity: 0.8;
-  padding: 1em;
   width: 100%;
 }
 .conHeader {
   grid-area: header;
   font-family: 'Roboto Slab', sans-serif;
-  
-
 }
 .emailBox {
   grid-area: email;
