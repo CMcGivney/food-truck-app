@@ -3,7 +3,7 @@ import {Route, Switch, } from "react-router-dom";
 import Home from './components/Home'
 import Contact from './components/Contact'
 import Menu from './components/Menu'
-import Press from './components/Press'
+import Events from './components/Events'
 import NavBar from './components/NavBar'
 import {Container} from 'semantic-ui-react'
 import './App.css';
@@ -17,7 +17,7 @@ function App() {
      <Route exact path='/' component={Home} />
      <Route exact path='/Contact' component={Contact} />
      <Route exact path='/Menu' component={Menu} />
-     <Route exact path='/Press' component={Press} />
+     <Route exact path='/Events' component={Events} />
      </Switch>
     </Container>
   </>
