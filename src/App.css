@@ -26,7 +26,7 @@
 
 .mainHeader {
   font-family: 'Roboto Slab', serif;
-  
+  font-size: 50px;
 }
 .motto {
   font-family: 'Roboto', serif;
@@ -127,11 +127,11 @@ a.social {
 }
 
 a.email {
-  color: hotpink;
+  color: blue;
 }
 
 a.email:hover {
-  color: blue;
+  color: hotpink;
 }
 /*Events Layout style*/
 .twitter {
@@ -139,4 +139,9 @@ a.email:hover {
   align-items: center;
   text-align: center;
   display: flex;
+}
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 5rem;
 }

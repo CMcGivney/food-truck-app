@@ -1,10 +1,10 @@
 import React from 'react'
-import {Container, Header,} from 'semantic-ui-react'
+import {Header,} from 'semantic-ui-react'
 import SocialFollows from './SocialFollows'
 
 
 const Contact = () => (
- <Container>
+ <>
    <div className="contactGrid"> 
    <div className="headerCont">
     <Header.Content as='h1' className="conHeader">The Elysian Catering Company</Header.Content>
@@ -20,7 +20,7 @@ const Contact = () => (
     </Header.Content>
     
   </div>
- </Container>
+ </>
 )
 
 export default Contact;

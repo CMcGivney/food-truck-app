@@ -13,7 +13,7 @@ function App() {
   return (
   <>
     <NavBar/>
-   <Container style={{margin: "3em"}}>
+   <Container style={{margin: "3em 0 5em 0"}}>
      <Switch>
      <Route exact path='/' component={Home} />
      <Route exact path='/Contact' component={Contact} />

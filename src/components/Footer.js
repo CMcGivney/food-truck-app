@@ -7,7 +7,7 @@ class Footer extends React.Component {
   render() {
     return (
      <>
-      <Menu style={{backgroundColor: "tan"}} pointing secondary>
+      <Menu style={{backgroundColor: "tan",}} pointing secondary className="footer" fixed="bottom">
        <Menu.Item>
         <Header.Content>
          The Elysian
@@ -15,17 +15,17 @@ class Footer extends React.Component {
        </Menu.Item>
        <Menu.Item>
         <Header.Content>
-        <a href="tel:+1-435-555-5555">1-(435)-555-5555</a>
+        <a className="email" href="tel:+1-385-368-3525">1-(385)-368-3525</a>
         </Header.Content>
        </Menu.Item>
        <Menu.Item>
         <Header.Content>
-         business address
+         
         </Header.Content>
        </Menu.Item>
        <Menu.Item>
         <Header.Content>
-         <a href="mailto:yourmailaddress@gmail.com">YourEmailAddressHere</a>
+         <a className="email" href="mailto:asuntagaribay18@gmail.com">AsuntaGaribay18@gmail.com</a>
         </Header.Content>
        </Menu.Item>
        <Menu.Item>
@@ -35,7 +35,7 @@ class Footer extends React.Component {
        </Menu.Item>
        <Menu.Item floated="right">
         <Header.Content>
-         Powered by: <a href="https://chris-portfo.herokuapp.com/">84Creations</a>
+         Powered by: <a className="email" href="https://chris-portfo.herokuapp.com/">84Creations</a>
         </Header.Content>
        </Menu.Item>
       </Menu>

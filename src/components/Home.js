@@ -1,9 +1,9 @@
 import React from 'react'
-import {Header, Container} from 'semantic-ui-react'
+import {Header,} from 'semantic-ui-react'
 import Twitter from './Twitter.js'
 
 const Home = () => (
- <Container>
+ <>
   <div className="titleBox">
    <div className="title">
     <Header.Content className="mainHeader" as="h1" style={{margin: "0 0 0 0"}}>The Elysian Catering
@@ -21,7 +21,7 @@ const Home = () => (
      </div>
    </div>
   
-</Container>
+</>
 )
 
 
