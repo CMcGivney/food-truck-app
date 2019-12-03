@@ -1,7 +1,7 @@
 import React from 'react'
 import {Image, Container, Header} from "semantic-ui-react"
 import MenuImg from "../Images/Menu.jpeg"
-import Grams from './instagram'
+import Grams from './Instagram'
 
 const Menu = () => (
  <Container>
@@ -12,7 +12,9 @@ const Menu = () => (
     width="100%"
    />
    <br/>
+   <div className="gramViews">
    <Grams/>
+   </div>
  </Container>
 )
 

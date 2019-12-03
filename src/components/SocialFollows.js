@@ -6,7 +6,6 @@ import {faTwitter, faInstagram, faFacebook} from "@fortawesome/free-brands-svg-i
 export default function SocialFollow() {
   return (
     <div className="social-container">
-      <Header as="h3" className="contactHead">Let's Connect</Header>
      
       <a href="https://twitter.com/chris_mcgivney" className="twitter social">
         <FontAwesomeIcon icon={faTwitter} size="2x" />

@@ -21,23 +21,16 @@
   background-color: rgba(173, 166, 166, 0.836);
   opacity: 0.9;
   width: 100%;
-  /* padding: 1em, 0, 1em, 0;
-  margin: 1em, 0, 1em, 0; */
 }
-/* h1, h2, h3, h4, h5 {
-  margin: 0px, 0px, 0px, 0px !important;
-  margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-} */
+
 
 .mainHeader {
   font-family: 'Roboto Slab', serif;
-  padding: 0, 0, 0, 0;
-  margin: 0px, 0px, 0px, 0px !important;
+  
 }
-
+.motto {
+  font-family: 'Roboto', serif;
+}
 .homeContentGrid {
   display: grid;
   /* grid-template-columns: 1fr 35em; */
@@ -95,6 +88,7 @@ background-color: black;
 }
 .socialFollows {
   grid-area: social;
+  padding: 0 0 1em 0;
 }
 .contactImg {
   grid-area: img;
@@ -139,4 +133,10 @@ a.email {
 a.email:hover {
   color: blue;
 }
-
+/*Events Layout style*/
+.twitter {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}

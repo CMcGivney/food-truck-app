@@ -25,7 +25,7 @@ class Grams extends React.Component {
 
 
 render() {
-  const {images, isVisible } = this.state
+  const {images,} = this.state
   // const pictures = images.forEach((image)=>console.log(image.thumbnail.url,image.id))
 
   return (
@@ -37,8 +37,11 @@ render() {
       data-key={image}
       src={image.images.standard_resolution.url}
       key={image.id}
-      width="200em"
-      height="200em"
+      // href={image.images.standard_resolution.url}
+      // size="small"
+      // target="_blank"
+      width="300em"
+      height="300em"
    />
      )}
      

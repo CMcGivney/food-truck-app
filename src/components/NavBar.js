@@ -3,10 +3,12 @@ import {Link, withRouter} from 'react-router-dom'
 import {Menu,} from 'semantic-ui-react'
 
 class Navbar extends React.Component {
+ 
   render() {
     return (
       <>
-        <Menu style={{backgroundColor: "lightskyblue", opacity: "0.9"}} pointing secondary>
+       
+         <Menu style={{backgroundColor: "tan"}} pointing secondary fixed="top">
           <Link to='/'>
             <Menu.Item
               name='Home'
@@ -35,7 +37,8 @@ class Navbar extends React.Component {
               active={this.props.location.pathname === '/Events'}
             />
           </Link>
-        </Menu>
+         </Menu>
+      
     </>
     )
   }

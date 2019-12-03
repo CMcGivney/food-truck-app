@@ -2,6 +2,7 @@ import React from 'react'
 import {Header, Image, Container} from 'semantic-ui-react'
 import Festival from '../Images/festival.jpeg'
 import Twitter from './Twitter'
+import Grams from './Instagram'
 
 const Press = () => (
   <Container>
@@ -13,7 +14,13 @@ const Press = () => (
   
   />
   <br/>
+  <div className="twitter">
   <Twitter/>
+  </div>
+  <br/>
+  <div>
+    <Grams/>
+  </div>
   </Container>
 )
 

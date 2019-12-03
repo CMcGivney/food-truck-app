@@ -5,6 +5,7 @@ import Contact from './components/Contact'
 import Menu from './components/Menu'
 import Events from './components/Events'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 import {Container} from 'semantic-ui-react'
 import './App.css'
 
@@ -12,7 +13,7 @@ function App() {
   return (
   <>
     <NavBar/>
-   <Container>
+   <Container style={{margin: "3em"}}>
      <Switch>
      <Route exact path='/' component={Home} />
      <Route exact path='/Contact' component={Contact} />
@@ -20,6 +21,7 @@ function App() {
      <Route exact path='/Events' component={Events} />
      </Switch>
     </Container>
+    <Footer/>
   </>
   );
 }
