@@ -6,8 +6,8 @@ import Grams from './grams'
 
 const Press = () => (
   <>
-  <Header.Content as="h1">This will be press releases or upcoming Events</Header.Content>
-  <Header.Content as="p">I can put twitter events here but styled better than the scrolling element on the home page or we can use that one here.</Header.Content>
+  <Header.Content as="h1" style={{textAlign: 'center'}}>Upcoming Events</Header.Content>
+  {/* <Header.Content as="p">I can put twitter events here but styled better than the scrolling element on the home page or we can use that one here.</Header.Content> */}
   <Image
   src={Festival}
   width="100%"

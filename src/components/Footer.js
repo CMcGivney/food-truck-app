@@ -3,13 +3,14 @@ import {Header, Menu} from 'semantic-ui-react'
 import SocialFollow from './SocialFollows'
 
 class Footer extends React.Component {
+
  
   render() {
     return (
      <>
-      <Menu style={{backgroundColor: "tan",}} pointing secondary className="footer" fixed="bottom">
+      <Menu style={{backgroundColor: "tan",}} pointing secondary className="footer" >
        <Menu.Item>
-        <Header.Content>
+        <Header.Content className="mainFooter">
          The Elysian
         </Header.Content>
        </Menu.Item>
@@ -20,7 +21,7 @@ class Footer extends React.Component {
        </Menu.Item>
        <Menu.Item>
         <Header.Content>
-         
+         {/* business address here */}
         </Header.Content>
        </Menu.Item>
        <Menu.Item>
@@ -33,7 +34,7 @@ class Footer extends React.Component {
          <SocialFollow/>
         </Header.Content>
        </Menu.Item>
-       <Menu.Item floated="right">
+       <Menu.Item position="right">
         <Header.Content>
          Powered by: <a className="email" href="https://chris-portfo.herokuapp.com/">84Creations</a>
         </Header.Content>

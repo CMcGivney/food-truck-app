@@ -5,20 +5,27 @@ import SocialFollows from './SocialFollows'
 
 const Contact = () => (
  <>
-   <div className="contactGrid"> 
-   <div className="headerCont">
-    <Header.Content as='h1' className="conHeader">The Elysian Catering Company</Header.Content>
-    </div>
-    <div className="emailBox">
-     <Header as="h3" className="contactHead">Drop Us A Email</Header>
-     <a className="email" href="mailto:?Subject=Hello%20Chris">YourEmailhere@gmail.com</a>
-    </div>
+    {/* <Header.Content as='h1' className="conHeader">The Elysian Catering Company</Header.Content> */}
+      <div className="contactGrid"> 
+      <div className="emailBox">
+        <Header as="h3" className="contactHead">Drop Us A Email</Header>
+        <a className="email" href="mailto:asuntagaribay18@gmail.com">AsuntaGaribay18@gmail.com</a>
+      </div>
     
-    <Header.Content as="h3" className="socialFollows">
-    Lets Connect
+     <div className="socialFollows">
+       <Header.Content as="h3" >
+        Lets Connect
+       </Header.Content>
       <SocialFollows/>
-    </Header.Content>
-    
+     </div>
+     <div className='phoneNum'>
+       <Header.Content as="h3" >
+        Call Us
+       </Header.Content>
+       <Header.Content as='h4'>
+        <a className="email" href="tel:+1-385-368-3525">1-(385)-368-3525</a>
+       </Header.Content>
+     </div>
   </div>
  </>
 )
