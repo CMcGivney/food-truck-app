@@ -1,5 +1,5 @@
 import React from "react"
-import {Header} from "semantic-ui-react"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faTwitter, faInstagram, faFacebook} from "@fortawesome/free-brands-svg-icons"
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Header, Menu} from 'semantic-ui-react'
+import {Header,} from 'semantic-ui-react'
 import SocialFollow from './SocialFollows'
 
 class Footer extends React.Component {
