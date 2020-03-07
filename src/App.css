@@ -1,3 +1,11 @@
+#root {
+  background-color: #bea6a6;
+  background-size: cover;
+}
+.navBar {
+  color: white;
+  background-color: black;
+}
 .titleBox {
   background-image: url(./Images/veggietable.jpeg);
   background-repeat: no-repeat;
@@ -35,23 +43,27 @@
 .homeContentGrid {
   display: grid;
   /* grid-template-columns: 1fr 35em; */
-  grid-template-rows: 20em;
-  grid-template-areas: "about" "twitter";
+  grid-template-columns: auto;
+  grid-template-areas: "about about" ". twitter";
+  grid-gap: 2em;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(85, 61, 61);
+  
   color: white;
+  padding: 2em 0 2em 0;
+  min-height: 50rem;
+
 }
 
 .col-1 {
 grid-area: about;
-background-color: black;
+width: 100%;
 
 }
 .col-2 {
   grid-area: twitter;
-  width: 100px
+  width: 30em
 }
 
 /*Contact Page Style & Layout*/
@@ -181,4 +193,64 @@ a.email:hover {
   /* font-size: 2em; */
   grid-area: power;
   padding: .5em;
+}
+/*Events Layout style*/
+.twitter {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+/*FAQ Page style*/
+.faqContainer {
+  margin-top: 5rem;
+  display: flex;
+  width: 100%;
+  margin: 3rem 0 5rem 0;
+}
+
+.cardContainer {
+  justify-content: center;
+ 
+  
+}
+.faqCard {
+ display: flex;
+}
+.cardHead {
+  justify-content: center;
+  padding: 1rem;
+}
+.cardMeta {
+  justify-content: center;
+  padding: 1rem;
+}
+/*End Of FAQ Styles*/
+@media only screen and (max-width: 767px) {
+  .homeContentGrid {
+    display: grid;
+    /* grid-template-columns: 1fr 35em; */
+    grid-template-columns: auto;
+    grid-template-areas: "about" "twitter";
+    grid-gap: 2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    color: white;
+    padding: 2em 0 2em 0;
+    min-height: 50rem;
+  
+  }
+  
+  .col-1 {
+  grid-area: about;
+  width: 100%;
+  
+  }
+  .col-2 {
+    grid-area: twitter;
+    width: 30em
+  }
 }

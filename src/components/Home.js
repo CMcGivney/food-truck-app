@@ -13,11 +13,11 @@ const Home = () => (
    </div>
   </div>
   <div className="homeContentGrid ">
-     <div className='about'>
+     <div className='col-1 about'>
       <Header.Content as="h3" style={{margin: "0 1em 0 1em"}}>Food as it should be. Food should taste good. It should feel good. It should do good things for you and the world around you.</Header.Content>
       <Header.Content as="p">"Panera Bread Mission Statement"</Header.Content>
      </div>
-     <div className='twitter'>
+     <div className='col-2 twitter'>
       <Twitter/>
      </div>
    </div>

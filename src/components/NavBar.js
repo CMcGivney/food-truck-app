@@ -8,19 +8,12 @@ class Navbar extends React.Component {
     return (
       <>
        
-         <Menu style={{backgroundColor: "tan"}} pointing secondary fixed="top">
+         <Menu style={{backgroundColor:"black"}} inverted pointing secondary fixed="top">
           <Link to='/'>
             <Menu.Item
               name='Home'
               id='home'
               active={this.props.location.pathname === '/'}
-            />
-            </Link>
-          <Link to='/Contact'>
-            <Menu.Item
-              name='Contact'
-              id='contact'
-              active={this.props.location.pathname === '/Contact'}
             />
             </Link>
           <Link to='/Menu'>
@@ -37,6 +30,13 @@ class Navbar extends React.Component {
               active={this.props.location.pathname === '/Events'}
             />
           </Link>
+                    <Link to='/FAQ'>
+            <Menu.Item
+              name='FAQ'
+              id='FAQ'
+              active={this.props.location.pathname === '/FAQ'}
+            />
+            </Link>
          </Menu>
       
     </>
@@ -44,11 +44,5 @@ class Navbar extends React.Component {
   }
 }
 
-// const styles = {
-//   active: {
-//     color: 'white',
-//     fontWeight: 'bold',
-//     backgroundColor: '#555'
-//   }
-//}
+
 export default withRouter(Navbar);
