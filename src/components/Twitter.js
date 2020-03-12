@@ -10,7 +10,7 @@ const Twitter = () => (
      <TwitterTimelineEmbed
         sourceType="profile"
         screenName="Elysian_Truck"
-        options={{height: "35em", width: "30em"}}
+        options={{height: "35rem", width: "30rem"}}
         sameSite='none'
      />
   </Container>

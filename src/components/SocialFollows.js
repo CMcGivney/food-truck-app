@@ -7,7 +7,7 @@ export default function SocialFollow() {
   return (
     <div className="social-container">
      
-      <a href="https://twitter.com/Elysian_Truck" className="twitter social">
+      <a href="https://twitter.com/Elysian_Truck" className="twitterIcon social">
         <FontAwesomeIcon icon={faTwitter} size="2x" />
       </a>
       <a

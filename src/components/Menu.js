@@ -1,20 +1,18 @@
 import React from 'react'
 import {Image, Header} from "semantic-ui-react"
-import MenuImg from "../Images/Menu.jpeg"
-import Grams from './grams'
+import ElysianMenu from "../Images/ElysianMenu.png"
 
 const Menu = () => (
  <>
- <Header.Content as="h1" style={{textAlign: 'center'}}>Menus Past & Present</Header.Content>
- {/* <Header.Content as="p">We can make a slide show of menu images or hard code menus, I suggest starting a instagram account just for menus and then run them here. That way you can always have the most up to date menus.</Header.Content> */}
-   <Image
-    src={MenuImg}
-    width="100%"
-   />
-   <br/>
-   <div className="gramViews">
-   <Grams/>
-   </div>
+ <Header.Content as="h1" style={{textAlign: 'center'}}>Our Seasonal Offerings</Header.Content>
+ <Header.Content as="p" style={{textAlign: 'center'}}>(Custom Menus Upon Request)</Header.Content>
+
+<Image
+  src={ElysianMenu}
+  alt="menu"
+
+/>
+
  </>
 )
 
