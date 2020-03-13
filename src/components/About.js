@@ -4,14 +4,15 @@ import HeadShot from '../Images/mainImg.jpg'
 const About = () => (
   <>
    <div className='aboutTitle'>
-    <Header.Content as="h2" className= "aboutHead" style={{"textAlign": "center"}}>Asunta Garibay</Header.Content>
-    <Header.Content as="p">Chef & Founder</Header.Content>
+    <Header.Content as="h2" className= "menuHeader" >Asunta Garibay</Header.Content>
+    <Header.Content as="p" className= "menuMeta">Chef & Founder</Header.Content>
    </div>
     <div className="aboutMeContainer">
      <div className="personalImg">
       <Image
        src = {HeadShot}
        alt= "Head shot of Elysian Founder"
+       className= 'headShot'
        height="150px"
        width="150px"
        />

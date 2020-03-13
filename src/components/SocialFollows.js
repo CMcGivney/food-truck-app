@@ -1,7 +1,7 @@
 import React from "react"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faTwitter, faInstagram, faFacebook} from "@fortawesome/free-brands-svg-icons"
+import {faTwitter, faInstagram, faFacebook, faLinkedin} from "@fortawesome/free-brands-svg-icons"
 
 export default function SocialFollow() {
   return (
@@ -21,6 +21,12 @@ export default function SocialFollow() {
         className="facebook social"
       >
         <FontAwesomeIcon icon={faFacebook} size="2x" />
+      </a>
+      <a
+        href="https://www.linkedin.com"
+        className="linkedin social"
+      >
+        <FontAwesomeIcon icon={faLinkedin} size="2x" />
       </a>
     </div>
   )

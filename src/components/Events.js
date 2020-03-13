@@ -6,12 +6,10 @@ import Twitter from './Twitter'
 const Press = () => (
   <>
     <div className="eventContainer"> 
-      <div className="eventHead">
-       <Header.Content as="h1">Upcoming Events</Header.Content>
-      </div>
-      <div className="twitter">
-       <Twitter/>
-      </div>
+       <Header.Content as="h1" className="eventHead">Upcoming Events</Header.Content>
+        <div className="twitter">
+         <Twitter/>
+        </div>
     </div>
   </>
 )

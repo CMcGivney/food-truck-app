@@ -40,12 +40,12 @@ body {
   width: 100%;
 }
 .mainHeader {
-  font-family: 'Roboto Slab', serif;
-  font-size: 50px;
+  font-family: 'Edwardian Script ITC';
+  font-size: 4rem;
 }
 
 .motto {
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto Slab', serif;
 }
 .homeContentGrid {
   display: grid;
@@ -91,20 +91,69 @@ body {
 }
 .personalImg {
   grid-area: headShot;
-  padding: 5rem;
+  display: grid;
+}
+.headShot {
+  justify-self: center;
 }
 .aboutMeText {
   grid-area: aboutText;
   padding: 0 3rem 0 0;
 }
 /*end of About me layout*/
+/*Menu layout and style*/
+.imageContainer {
+  display: grid;
+}
+.menuImage {
+  /* margin: 0 2rem 0 2rem; */
+  justify-self: center;
+}
+.menuHeader {
+  text-align: center;
+  font-family: 'Edwardian Script ITC';
+  font-size: 4rem;
+  margin: 0 0 0 0;
+}
 
+.menuMeta {
+  text-align: center;
+  font-family: 'Roboto Slab';
+}
+/*End of Menu style*/
+/* styles for the social media icons */
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+ }
+ 
+ a.social:hover {
+ transform: translateY(-2px); 
+ color: chartreuse;
+ }
+ 
+ a.facebook {
+ color: #4968ad;
+ }
+ 
+ a.twitter {
+ color: #49a1eb;
+ }
+ 
+ a.instagram {
+ color: black;
+ }
+ a.linkedin {
+ color: #49a1eb;
+ }
+ /*End of social styles*/
  /*Email Style*/
 .emailBox {
   grid-area: email;
   padding: .5em;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: 'Roboto Slab', serif;
 
 }
@@ -131,6 +180,8 @@ a.email:hover {
   grid-area: "eventHead";
   text-align: center;
   padding: 2rem 0 0 0;
+  font-family: 'Edwardian Script ITC';
+  font-size: 4rem;
 }
 /*End og events styles*/
 
@@ -149,28 +200,24 @@ a.email:hover {
 }
 
 .mainFooter {
-  font-family: 'Roboto Slab', serif;
-  font-size: 2em;
+  font-family: 'Edwardian Script ITC';
+  font-size: 3rem;
   padding: .5em;
   grid-area: title;
 }
 .phoneNum {
   font-family: 'Roboto Slab', serif;
   padding: .5em;
-  /* font-size: 2em; */
   grid-area: phone;
 }
 .poweredBy {
   font-family: 'Roboto Slab', serif;
-  /* font-size: 2em; */
   grid-area: power;
   padding: .5em;
 }
-.twitterIcon {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
+.socialFollows {
+  grid-area: social;
+  padding: 1rem;
 }
 
 /*FAQ Page style*/
