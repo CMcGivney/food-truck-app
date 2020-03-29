@@ -9,9 +9,9 @@ const Home = () => (
  <>
   <div className="titleBox">
    <div className="title">
-    <Header.Content className="mainHeader" as="h1" style={{margin: "0 0 0 0"}}>The Elysian Catering
+    <Header.Content className="mainHeader" as="h1" style={{margin: "0 0 0 0"}}>Elysian Catering
     </Header.Content>
-    <Header.Content as="h5" className="motto" style={{margin: ".4em 0 0 0"}}>" Fresh Earth Conscious Community Building Catering "</Header.Content>
+    <Header.Content as="h5" className="motto" style={{margin: ".4em 0 0 0"}}>"A Fresh, Earth Conscious, Community Building, Catering Team"</Header.Content>
    </div>
   </div>
   <div className="homeContentGrid">

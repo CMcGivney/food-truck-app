@@ -7,9 +7,7 @@ const Press = () => (
   <>
     <div className="eventContainer"> 
        <Header.Content as="h1" className="eventHead">Upcoming Events</Header.Content>
-        <div className="twitter">
-         <Twitter/>
-        </div>
+       <Twitter className="twitter"/>
     </div>
   </>
 )

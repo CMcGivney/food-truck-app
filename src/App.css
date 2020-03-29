@@ -1,16 +1,9 @@
 #root {
-  background-color: #bea6a6;
+  background-color: #e7dada;
   background-size: cover;
-}
-/* html {
-  height: 100%;
-  margin: 0;
   
 }
-body {
-  display: grid;
-  grid-template-rows: 1fr auto;
-} */
+
 .navBar {
   color: white;
   background-color: black;
@@ -25,7 +18,7 @@ body {
   display: flex;
   background-size: cover;
   width: 100%;
-  height: 45vh;
+  height: 60vh;
   -webkit-background-size: cover;
   -moz-background-size: cover, ;
   -o-background-size: cover,;
@@ -70,8 +63,9 @@ body {
 }
 .twitter {
   grid-area: twitter;
-  width: 30em;
   justify-self: center;
+  align-self: center;
+  justify-content: center;
 }
 .slideShow {
   grid-area: slideShow;
@@ -79,47 +73,107 @@ body {
 }
 /* About Page layout*/
 .aboutTitle {
-  text-align: center;
-  padding: 2rem 0 0 0;
+  background-color: #DBAE4B;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem;
+}
+.aboutHead {
+  color:black;
+
+}
+.aboutMeta {
+  align-self: flex-end;
 }
 .aboutMeContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: .3fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-areas: "headShot aboutText";
-  margin: 5rem 0 0 0;
+  margin: 0 2rem;
   height: 59vh;
 }
 .personalImg {
-  grid-area: headShot;
+  grid-area: headShot; 
   display: grid;
+  justify-self: center;
+  align-self: center;
 }
 .headShot {
   justify-self: center;
+  height: 30rem;
+  width: 80%;
+  border: 1px solid black;
+  box-shadow: 10px 10px 8px #888888;
+ 
 }
 .aboutMeText {
   grid-area: aboutText;
-  padding: 0 3rem 0 0;
+  text-align: justify;
+  align-self: center;
+  justify-self: center;
 }
 /*end of About me layout*/
 /*Menu layout and style*/
-.imageContainer {
-  display: grid;
-}
-.menuImage {
-  /* margin: 0 2rem 0 2rem; */
-  justify-self: center;
-}
-.menuHeader {
+.menuTitle {
+  display: flex;
+  flex-direction: column;
+  background-color: #DBAE4B;
+  font-family: 'Solway', serif;
   text-align: center;
-  font-family: 'Edwardian Script ITC';
-  font-size: 4rem;
-  margin: 0 0 0 0;
+  padding: 1rem 1rem;
+}
+.menuHead {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+.menuMeta {
+ font-size: 1rem;
+ color: white;
+}
+.menuContainer {
+  display: grid;
+  justify-content: center;
+  background-image: url(./Images/marbleBG.jpg);
+  background-color: #fcfcfc;
+  /* margin: 0 15rem; */
+  grid-template-areas: "apps" "salads" "entrees" "desserts";
+ 
+}
+.apps {
+  grid-area: apps;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin: 2rem 2rem 2rem 2rem;
+}
+.itemHead {
+  text-decoration: underline;
+  margin-bottom: 0px;
+}
+.salads {
+  grid-area: salads;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin: 0 3rem 2rem 3rem;
+}
+.entrees {
+  grid-area: entrees;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin: 0 2rem 2rem 2rem;
+}
+.desserts {
+  grid-area: desserts;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin: 0 2rem 2rem 2rem;
 }
 
-.menuMeta {
-  text-align: center;
-  font-family: 'Roboto Slab';
-}
 /*End of Menu style*/
 /* styles for the social media icons */
 a.social {
@@ -159,11 +213,11 @@ a.social {
 }
 
 a.email {
-  color: darkblue;
+  color: black;
 }
 
 a.email:hover {
-  color: hotpink;
+  color: blue;
 }
 /*End of Email styles*/
 
@@ -178,10 +232,10 @@ a.email:hover {
 
 .eventHead {
   grid-area: "eventHead";
+  background-color: #DBAE4B;
   text-align: center;
-  padding: 2rem 0 0 0;
-  font-family: 'Edwardian Script ITC';
-  font-size: 4rem;
+  padding: 1rem;
+  font-family: 'Roboto Slab';
 }
 /*End og events styles*/
 
@@ -190,19 +244,19 @@ a.email:hover {
   justify-content: center;
   align-items: end;
   text-align: center;
-  background-color: tan;
+  background-color: rgb(219, 174, 75);
   display: grid;
   width: 100%;
   padding: 1em;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "title" "phone" "email" "social" "power";
+  grid-template-areas: "title"  "email" "phone" "social" "power";
 }
 
 .mainFooter {
   font-family: 'Edwardian Script ITC';
   font-size: 3rem;
-  padding: .5em;
+  padding: .5em 0;
   grid-area: title;
 }
 .phoneNum {
@@ -294,19 +348,35 @@ h3 {
 @media only screen and (max-width: 767px) {
   .homeContentGrid {
     display: grid;
-    grid-template-columns: auto;
+    /* grid-template-columns: ; */
     grid-template-rows: auto 10rem auto;
     grid-template-areas: "slideShow" "mission" "twitter";
     grid-gap: 1em;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     text-align: center;
     color: white;
     padding: 2em 0 2em 0;
     min-height: 50rem;
   
   }
+  .titleBox {
+    background-image: url(./Images/ninePlates.jpeg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover, ;
+    -o-background-size: cover,;
+    /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0
+    filter: grayscale(90%); */
   
+  }
   .missionStatement {
   grid-area: mission;
   width: 100vw;
@@ -316,16 +386,17 @@ h3 {
   }
   .twitter {
     grid-area: twitter;
-    width: 30em;
-    justify-self: center;
+    display: grid;
+    justify-content: center;
   }
   .slideShow {
     grid-area: slideShow;
-    width: auto;
+    width: 100%;
   }
   .slide-container {
-    width: 25rem;
-    margin: auto; }
+    width: 90vw;
+    margin: auto; 
+  }
   
   h3 {
     text-align: center; }
@@ -335,6 +406,72 @@ h3 {
     align-items: center;
     justify-content: center;
     background-size: cover;
-    height: 25em;
+    height: 40vh;
   }
+  /* About Page layout*/
+.aboutMeContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .60fr auto;
+  grid-template-areas: "headShot" 
+                       "aboutText";
+  margin: 0 0 0 0;
+  height: 110vh;
+}
+.personalImg {
+  grid-area: headShot; 
+  display: grid;
+  justify-self: center;
+  align-self: center;
+}
+.headShot {
+  justify-self: center;
+  height: 50vh;
+  width: 100vw
+}
+.aboutMeText {
+  grid-area: aboutText;
+  text-align: justify;
+  justify-self: center;
+  align-self: flex-start;
+  
+}
+/*Menu Mobile change*/
+.menuContainer {
+  display: grid;
+  justify-content: center;
+  background-color: #fcfcfc;
+  margin: 0 1rem;
+  grid-template-areas: "apps" "salads" "entrees" "desserts";
+ 
+}
+.apps {
+  grid-area: apps;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin: 1rem 3rem 2rem 3rem;
+}
+
+.salads {
+  grid-area: salads;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin: 0 3rem 2rem 3rem;
+}
+.entrees {
+  grid-area: entrees;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin: 0 2rem 2rem 2rem;
+}
+.desserts {
+  grid-area: desserts;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin: 0 2rem 2rem 2rem;
+}
 }

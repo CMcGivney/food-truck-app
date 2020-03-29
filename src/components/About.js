@@ -1,20 +1,20 @@
 import React from 'react'
 import {Header, Image,} from 'semantic-ui-react'
-import HeadShot from '../Images/mainImg.jpg'
+import HeadShot from '../Images/B&WShot1.PNG'
 const About = () => (
   <>
    <div className='aboutTitle'>
-    <Header.Content as="h2" className= "menuHeader" >Asunta Garibay</Header.Content>
-    <Header.Content as="p" className= "menuMeta">Chef & Founder</Header.Content>
+    <Header.Content as="h2" className= "aboutHead" >Asunta Garibay</Header.Content>
+    <Header.Content as="p" className= "aboutMeta">Chef & Founder</Header.Content>
    </div>
     <div className="aboutMeContainer">
      <div className="personalImg">
       <Image
        src = {HeadShot}
-       alt= "Head shot of Elysian Founder"
-       className= 'headShot'
-       height="150px"
-       width="150px"
+       alt= "Head shot of Elysian Chef & Founder"
+       centered
+       size="small"
+       
        />
      </div>
      <div className="aboutMeText">

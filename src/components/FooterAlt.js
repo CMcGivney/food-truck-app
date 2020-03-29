@@ -13,7 +13,7 @@ class Footer extends React.Component {
           </div>
           <div className='phoneNum'>
             <Header.Content>
-              <a className="email" href="tel:+1-385-368-3525">1-(385)-368-3525</a>
+             Call: <a className="email" href="tel:+1-385-368-3525">1-(385)-368-3525</a>
             </Header.Content>
            </div>
           <div className='bizAddress'>
@@ -23,8 +23,9 @@ class Footer extends React.Component {
            </div>
           <div className='emailBox'>
             <Header.Content>
-              <a className="email" href="mailto:asuntagaribay18@gmail.com">AsuntaGaribay18@gmail.com</a>
-            </Header.Content></div>
+             Email: <a className="email" href="mailto:asuntagaribay18@gmail.com">AsuntaGaribay18@gmail.com</a>
+            </Header.Content>
+            </div>
           <div className='socialFollows'>
             <Header.Content>
              <SocialFollow/>

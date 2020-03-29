@@ -5,7 +5,7 @@ import {Header, Card,} from 'semantic-ui-react'
 
 const Faq = () => (
   <>
-    <Header.Content as="h1" style={{ textAlign: 'center'}}>Frequently Ask Questions</Header.Content>
+    <Header.Content as="h1" className="eventHead">Frequently Ask Questions</Header.Content>
   <div className="faqContainer">
    <Card.Group className="cardContainer" stackable>
     <Card className="faqCard">
