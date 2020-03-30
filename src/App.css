@@ -17,6 +17,7 @@
   text-align: center;
   display: flex;
   background-size: cover;
+  margin-bottom: 3rem;
   width: 100%;
   height: 60vh;
   -webkit-background-size: cover;
@@ -302,18 +303,19 @@ a.email:hover {
 
 /** Slider Css **/
 .slide-container {
-  width: 57vw;
+  width: 56vw;
   margin: auto; }
 
 h3 {
   text-align: center; }
+
 
 .each-slide > div {
   display: flex;
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 50vh;
+  height: 69vh;
 }
 
 .each-slide span {
