@@ -5,12 +5,12 @@ import {Container} from 'semantic-ui-react'
 const Twitter = () => (
   <Container>
      <TwitterFollowButton
-       screenName={'Elysian_Truck'}
+       screenName={'ElysianCaterer'}
      />
      <TwitterTimelineEmbed
         sourceType="profile"
-        screenName="Elysian_Truck"
-        options={{height: "35rem", width: "30rem"}}
+        screenName="ElysianCaterer"
+        options={{height: "80vh", width: "70vw"}}
         sameSite='none'
      />
   </Container>

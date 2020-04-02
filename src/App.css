@@ -138,16 +138,17 @@
   justify-content: center;
   background-image: url(./Images/marbleBG.jpg);
   background-color: #fcfcfc;
-  /* margin: 0 15rem; */
-  grid-template-areas: "apps" "salads" "entrees" "desserts";
+  grid-template-columns: 20rem 20rem 20rem;
+  /* grid-template-rows: 1fr 1fr; */
+  grid-template-areas: "apps salads desserts" "apps entrees desserts";
  
 }
 .apps {
   grid-area: apps;
-  justify-self: center;
-  align-self: center;
+  /* justify-self: center;
+  align-self: center; */
   text-align: center;
-  margin: 2rem 2rem 2rem 2rem;
+  margin: 1rem;
 }
 .itemHead {
   text-decoration: underline;
@@ -158,21 +159,21 @@
   justify-self: center;
   align-self: center;
   text-align: center;
-  margin: 0 3rem 2rem 3rem;
+  margin: 1rem;
 }
 .entrees {
   grid-area: entrees;
   justify-self: center;
   align-self: center;
   text-align: center;
-  margin: 0 2rem 2rem 2rem;
+  margin: 1rem;
 }
 .desserts {
   grid-area: desserts;
   justify-self: center;
-  align-self: center;
+  /* align-self: center; */
   text-align: center;
-  margin: 0 2rem 2rem 2rem;
+  margin: 1rem;
 }
 
 /*End of Menu style*/
@@ -443,16 +444,15 @@ h3 {
   display: grid;
   justify-content: center;
   background-color: #fcfcfc;
-  margin: 0 1rem;
   grid-template-areas: "apps" "salads" "entrees" "desserts";
- 
+  grid-template-columns: 1fr;
 }
 .apps {
   grid-area: apps;
   justify-self: center;
   align-self: center;
   text-align: center;
-  margin: 1rem 3rem 2rem 3rem;
+  margin: 1rem;
 }
 
 .salads {
@@ -460,20 +460,20 @@ h3 {
   justify-self: center;
   align-self: center;
   text-align: center;
-  margin: 0 3rem 2rem 3rem;
+  margin: 1rem;
 }
 .entrees {
   grid-area: entrees;
   justify-self: center;
   align-self: center;
   text-align: center;
-  margin: 0 2rem 2rem 2rem;
+  margin: 1rem;
 }
 .desserts {
   grid-area: desserts;
   justify-self: center;
   align-self: center;
   text-align: center;
-  margin: 0 2rem 2rem 2rem;
+  margin: 1rem;
 }
 }
