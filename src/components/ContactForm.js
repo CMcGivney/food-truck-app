@@ -1,4 +1,5 @@
 import React from 'react'
+import { withRouter} from 'react-router-dom'
 import {Form, } from 'semantic-ui-react'
 import emailjs from 'emailjs-com'
 
@@ -9,19 +10,23 @@ class ContactForm extends React.Component {
            email: '',
            dates: '',
            message: '',
-           numGuests: 0
+           numGuests: 0,
   }
+
 
   resetForm() {
     this.setState({
       name: '',
       email: '',
-      dates: '',
+      dates: 'mm/dd/yyyy',
       message: '',
-      numGuests: 0
+      numGuests: 0,
     })
+    alert("Message Sent")
+    this.props.history.push("/")
   }
-
+  
+ 
 handleChange = (e) => {
   this.setState({ [e.target.name]: e.target.value, })
 }
@@ -51,7 +56,8 @@ handleSubmit = (e) => {
 
 
   render() {
-    return(
+  return(
+   
       <Form onSubmit={this.handleSubmit}>
       {/* <Header.Content as="h3" className="">Elysian Catering</Header.Content> */}
         <Form.Group>
@@ -85,6 +91,7 @@ handleSubmit = (e) => {
         <Form.Input
          name="numGuests"
          label="Number of Guests"
+         type="number"
          value={this.state.numGuests}
          onChange={this.handleChange}
          required
@@ -109,4 +116,4 @@ handleSubmit = (e) => {
   }
   
 
-export default ContactForm
+export default withRouter(ContactForm)

@@ -15,7 +15,7 @@ const Home = () => (
       <Header.Content as="h1" className="elysianLogo">Elysian</Header.Content>
       <Header.Content as="h1" className="cateringLogo">Catering</Header.Content>
      </div>
-     <Header.Content as="h3" className="motto">"A Fresh, Earth Conscious, Community Building, Catering Team"</Header.Content>
+     {/* <Header.Content as="h3" className="motto">"A Fresh, Earth Conscious, Community Building, Catering Team"</Header.Content> */}
      <Header.Content as="h3" className="motto">"You Dream It & We Can Do It!"</Header.Content>
     </div>
    </div>
