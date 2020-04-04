@@ -41,9 +41,9 @@ handleSubmit = (e) => {
 
  emailjs.send(
   'gmail',
-  'template_T9qf6qBd',
+  (process.env.TEMPLATE_NUM),
    templateParams,
-  'user_DPXyyf8OCsq80vNDZsRU8'
+  (process.env.USER_NUM)
  )
  this.resetForm()
 }
