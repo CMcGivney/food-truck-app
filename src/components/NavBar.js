@@ -7,8 +7,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <>
-       
-         <Menu style={{backgroundColor:"black", boxShadow: "0 2px 2px -2px rgba(0,0,0,.2)"}} inverted pointing fixed="top">
+         <Menu fluid style={{backgroundColor:"black", boxShadow: "0 2px 2px -2px rgba(0,0,0,.2)"}} inverted pointing fixed="top">
           <Link to='/'>
             <Menu.Item
               name='Home'
@@ -44,13 +43,13 @@ class Navbar extends React.Component {
               active={this.props.location.pathname === '/Contact'}
             />
           </Link>
-                    {/* <Link to='/FAQ'>
+          <Link to='/FAQ'>
             <Menu.Item
               name='FAQ'
               id='FAQ'
               active={this.props.location.pathname === '/FAQ'}
             />
-            </Link> */}
+            </Link>
          </Menu>
       
     </>

@@ -10,7 +10,7 @@ const Press = () => (
        </div>
   
        <div className="twitter" >
-        <TwitterEvents />
+        <TwitterEvents style={{alignText: 'center'}}/>
        </div>
    
   </>

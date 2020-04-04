@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Switch, } from "react-router-dom";
 import Home from './components/Home'
 import About from './components/About'
-// import FAQ from './components/FAQ'
+import FAQ from './components/FAQ'
 import Menu from './components/Menu'
 import Events from './components/Events'
 import Contact from './components/Contact'
@@ -15,11 +15,11 @@ function App() {
   return (
   <>
     <NavBar/>
-   <Container style={{margin: "3em 0"}}>
+   <Container fluid style={{margin: "3em 0"}}>
      <Switch>
      <Route exact path='/' component={Home} />
      <Route exact path='/about' component={About} />
-     {/* <Route exact path='/FAQ' component={FAQ} /> */}
+     <Route exact path='/FAQ' component={FAQ} />
      <Route exact path='/Menu' component={Menu} />
      <Route exact path='/Events' component={Events} />
      <Route exact path='/Contact' component={Contact} />

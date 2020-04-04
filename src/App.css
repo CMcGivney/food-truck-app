@@ -35,7 +35,7 @@
   align-self: center;
   text-align: center;
   background-size: 100%;
-  width: 90%;
+  width: 100%;
   height:90vh;
   -webkit-background-size: 100%;
   -moz-background-size: 100%, ;
@@ -62,11 +62,13 @@
   font-family: 'Dancing Script', cursive;
   font-size: 5rem;
   align-self: flex-start;
+  margin: 0;
 }
 .cateringLogo {
   font-family: 'Dancing Script', cursive;
   font-size: 5rem;
   align-self: flex-end;
+  margin: 0;
 }
 
 .motto {
@@ -78,7 +80,7 @@
 .missionStatement {
  grid-area: mission;
  margin: 3rem 0;
- width: 90%;
+ width: 100%;
  height: 10rem;
  background-color: black;
  padding: 3rem 0 0 0;
@@ -104,8 +106,6 @@
   display: flex;
   flex-wrap: flex;
   background-color: black;
-  padding: 1rem 1rem;
-  margin: 3rem 1rem;
   flex-direction: column;
  
 }
@@ -115,14 +115,16 @@
   align-self: center;
   justify-content: center;
   width: 100%;
-  height: 5rem;
+  height: 7rem;
+  padding: 1rem 0; 
+  margin-bottom: 1rem;
   background-color: #DBAE4B;
   color: white;
   display: flex;
 }
 .youtube {
   display: flex;
-  justify-self: center;
+  justify-self: flex-end;
   align-self: center;
   height: auto;
   width: 90%;
@@ -180,7 +182,6 @@
 }
 .slideShow {
   grid-area: slideShow;
-  width: 100%;
 }
 /* About Page layout*/
 .aboutTitle {
@@ -191,12 +192,13 @@
 }
 .aboutHead {
   color:black;
-  align-self: flex-start;
+  align-self: center;
   font-family: 'Solway', serif;
+  padding-left: 1rem;
 
 }
 .aboutMeta {
-  align-self: flex-end;
+  align-self: center;
   color: white;
   font-family: 'Merriweather', serif;
 }
@@ -434,7 +436,7 @@ a.email:hover {
 
 /** Slider Css **/
 .slide-container {
-  width: 80vw;
+  width: 50vw;
   margin: auto; }
 
 h3 {
@@ -446,9 +448,10 @@ h3 {
   align-items: center;
   justify-content: center;
   align-self: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 70vh;
+  width: 100%;
 }
 
 .each-slide span {
@@ -493,7 +496,7 @@ h3 {
     background-size: 100%;
     margin-bottom: 1rem;
     width: 100%;
-    height: 30rem;
+    height: 20rem;
     margin-bottom: 0;
     -webkit-background-size: 100%;
     -moz-background-size: 100%, ;
@@ -569,8 +572,8 @@ h3 {
     padding: 0 0;
     margin: 1rem 0 0;
     flex-direction: column;
-    justify-content: space-around;
-    min-height: 30rem;
+    justify-content: flex-start;
+    min-height: 25rem;
    
   }
   .mediaTitle {
@@ -579,7 +582,7 @@ h3 {
     align-self: center;
     justify-content: center;
     width: 100%;
-    height: 5rem;
+    height: 7rem;
     background-color: #DBAE4B;
     color: white;
     display: flex;
@@ -658,7 +661,7 @@ h3 {
     align-items: center;
     justify-content: center;
     background-size: cover;
-    height: 40vh;
+    height: 50vh;
   }
   /* About Page layout*/
 .aboutMeContainer {

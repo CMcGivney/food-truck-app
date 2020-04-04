@@ -9,7 +9,7 @@ class Footer extends React.Component {
     return (
         <>
         <div className="footerGrid">
-          <div className='mainFooter'>The Elysian Catering
+          <div className='mainFooter'>Elysian Catering
           </div>
           <div className='phoneNum'>
             <Header.Content>

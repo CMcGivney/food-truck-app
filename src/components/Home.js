@@ -16,7 +16,7 @@ const Home = () => (
       <Header.Content as="h1" className="cateringLogo">Catering</Header.Content>
      </div>
      {/* <Header.Content as="h3" className="motto">"A Fresh, Earth Conscious, Community Building, Catering Team"</Header.Content> */}
-     <Header.Content as="h3" className="motto">"You Dream It & We Can Do It!"</Header.Content>
+     <Header.Content as="h3" className="motto">"You Dream It & We Do It!"</Header.Content>
     </div>
    </div>
    <div className="slideShow">
@@ -35,19 +35,19 @@ const Home = () => (
     <div className="twitterContainer">
      <div className="mediaTitle">
        <Header.Content as="h3" className="aboutHead">Want to know where we are cooking? </Header.Content>
-       <Header.Content as="h5" className="aboutMeta">Follow us on Twitter!</Header.Content>
+       <Header.Content as="h5" className="aboutMeta">*Follow us on Twitter!</Header.Content>
      </div>
      <div className='twitter'>
       <Twitter style={{"alignText": "center"}}/>
      </div>
     </div>
-    <div className="youtubeContainer">
+    <div className="youtubeContainer" style={{marginTop: "2rem"}}>
      <div className="mediaTitle">
        <Header.Content as="h3" className="aboutHead">Want to see what we are up too? </Header.Content>
-       <Header.Content as="h5" className="aboutMeta">Subscribe to Chef AG's YouTube!</Header.Content>
+       <Header.Content as="h5" className="aboutMeta">*Subscribe to Chef AG's YouTube!</Header.Content>
      </div>
     <div className="youtube">
-      <YouTube id="2B9ZMw1kp9g" appendSrc="?autoplay=1&loop=1&modestbranding=1&samesite=none"/>
+      <YouTube id="2B9ZMw1kp9g" appendSrc="?autoplay=1&playlist=2B9ZMw1kp9g&loop=1&modestbranding=1&samesite=none"/>
      </div>
    </div>
  </div>
