@@ -38,7 +38,7 @@ handleSubmit = (e) => {
  let templateParams = {
   from_name: name,
   from_email: email,
-  to_name: 'cmmcgivney84@gmail.com',
+  to_name: 'ElysianCatering',
   date_event: dates,
   num_guests: numGuests,
   message_html: message,
