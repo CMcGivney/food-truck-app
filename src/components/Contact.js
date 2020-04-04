@@ -6,7 +6,7 @@ const Contact = () => (
   <>
    <div className='contactTitle'>
     <Header.Content as="h1" className="aboutHead">Lets Connect</Header.Content>
-    <Header.Content as="h4" className="aboutMeta">contact us for availability</Header.Content>
+    <Header.Content as="h4" className="aboutMeta">*contact us for availability</Header.Content>
    </div>
    <div className="contactContainer">
     <div className="contactForm">
