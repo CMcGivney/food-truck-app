@@ -7,22 +7,38 @@
 .navBar {
   color: white;
   background-color: black;
+  font-size: .5rem;
+  box-shadow: 0 2px 2px -2px rgba(107, 105, 105, 0.2);
 }
 /*Home page style*/
-.titleBox {
-  background-image: url(./Images/ninePlates.jpeg);
-  background-repeat: no-repeat;
+.homeContentGrid {
+  display: grid;
+  grid-template-columns: auto;
+  /* grid-template-rows: 1fr 10rem 1fr; */
+  grid-template-areas: "titleBox"
+                       "mission"  
+                       "slideShow"
+                       "youtube"
+                       "twitter"
+                       "affiliations" ;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.titleBox {
+  grid-area: titleBox;
+  background-image: url(./Images/ninePlates.jpeg);
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
   display: flex;
-  background-size: cover;
-  margin-bottom: 3rem;
+  background-size: 100%;
   width: 100%;
-  height: 60vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover, ;
-  -o-background-size: cover,;
+  height:100vh;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%, ;
+  -o-background-size: 100%,;
   /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0
   filter: grayscale(90%); */
 
@@ -32,45 +48,112 @@
   background-color: rgba(173, 166, 166, 0.836);
   opacity: 0.9;
   width: 100%;
+  justify-content: center;
+  padding: 1rem 1rem;
+  align-self: center;
 }
-.mainHeader {
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.elysianLogo {
   font-family: 'Edwardian Script ITC';
-  font-size: 4rem;
+  font-size: 5rem;
+  align-self: flex-start;
+}
+.cateringLogo {
+  font-family: 'Edwardian Script ITC';
+  font-size: 5rem;
+  align-self: flex-end;
 }
 
 .motto {
-  font-family: 'Roboto Slab', serif;
-}
-.homeContentGrid {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr 10rem 1fr;
-  grid-template-areas: "slideShow" "mission" "twitter";
-  grid-gap: 1em;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  min-height: 50rem;
-
+  font-family: 'Merriweather', serif;
+  margin: .5rem 0;
+  align-self: flex-end;
 }
 
 .missionStatement {
  grid-area: mission;
+ margin-bottom: 3rem;
  width: 100vw;
  height: 10rem;
  background-color: black;
  padding: 3rem 0 0 0;
+ color: white;
 }
 .twitter {
   grid-area: twitter;
+  display: flex;
+  text-align: center;
+ 
+}
+.youtube {
+  grid-area: youtube;
+  background-color: black;
+  padding: 1rem 1rem;
+  margin: 3rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  justify-self: center;
+  height: auto;
+  width: 90%;
+  color: white;
+}
+.affiliations {
+  background-color: black; 
+  padding: 1rem 1rem;
+  margin: 3rem 1rem 0;
+  display: flex;
+  grid-area: affiliations;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 35rem;
+  color: white;
+}
+.com_header {
+  justify-self: stretch;
+  align-self: center;
+  font-family: 'Merriweather', serif;
+  color: white;
+  height: 5rem;
+  width: 100%;
+}
+.catholicCommunity {
+  background-image: url(./Images/catholicCommunity.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 30vw;
+  margin: .5rem;
   justify-self: center;
   align-self: center;
-  justify-content: center;
+
+}
+.bbbsUtah {
+  background-image: url(./Images/BBBSUtah-logo.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 27vh;
+  width: 30vw;
+  margin: .5rem;
+  justify-self: center;
+  align-self: flex-start;
+}
+.voAmerica {
+  background-image: url(./Images/volunteersOfAmerica.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 32vw;
+  margin: .5rem;
+  justify-self: center;
+  align-self: center;
 }
 .slideShow {
   grid-area: slideShow;
-  width: auto;
+  width: 100%;
 }
 /* About Page layout*/
 .aboutTitle {
@@ -177,6 +260,26 @@
 }
 
 /*End of Menu style*/
+/*Contact */
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 1rem;
+  flex-wrap: wrap;
+  min-height: 50rem;
+}
+.contactTitle {
+  background-color: #DBAE4B;
+  color: white;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  height: 5rem;
+  width: 100%;
+}
+.contactForm {
+  padding: 1rem 1rem;
+}
 /* styles for the social media icons */
 a.social {
   margin: 0 1rem;
@@ -225,19 +328,24 @@ a.email:hover {
 
 /*Events Layout style*/
 .eventContainer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "eventHead" "twitter";
-  grid-gap: 2rem;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  flex-wrap: wrap;
 }
 
 .eventHead {
-  grid-area: "eventHead";
+  display:flex;
   background-color: #DBAE4B;
   text-align: center;
-  padding: 1rem;
+  margin-bottom: 3rem;
   font-family: 'Roboto Slab';
+  /* justify-self: center; */
+  align-items: center;
+  /* justify-items: center; */
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
 }
 /*End og events styles*/
 
@@ -252,7 +360,7 @@ a.email:hover {
   padding: 1em;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "title"  "email" "phone" "social" "power";
+  grid-template-areas: "title" "social" "email" "phone"  "power";
 }
 
 .mainFooter {
@@ -304,7 +412,7 @@ a.email:hover {
 
 /** Slider Css **/
 .slide-container {
-  width: 56vw;
+  width: 80vw;
   margin: auto; }
 
 h3 {
@@ -315,12 +423,14 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
-  height: 69vh;
+  align-self: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80vh;
 }
 
 .each-slide span {
-  padding: 20px;
+  padding: 20rem;
   font-size: 20px;
   background: #efefef;
   text-align: center;
@@ -331,7 +441,7 @@ h3 {
 }
 
 .each-fade .image-container {
-  width: 75%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -340,7 +450,7 @@ h3 {
 }
 
 .each-fade h2 {
-  width: 25%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,47 +459,123 @@ h3 {
 }
 /** end of slider css**/
 @media only screen and (max-width: 767px) {
-  .homeContentGrid {
-    display: grid;
-    /* grid-template-columns: ; */
-    grid-template-rows: auto 10rem auto;
-    grid-template-areas: "slideShow" "mission" "twitter";
-    grid-gap: 1em;
-    /* justify-content: center;
-    align-items: center; */
-    text-align: center;
-    color: white;
-    padding: 2em 0 2em 0;
-    min-height: 50rem;
-  
-  }
+
   .titleBox {
     background-image: url(./Images/ninePlates.jpeg);
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
     text-align: center;
+    align-self: flex-end;
     display: flex;
-    background-size: cover;
-    width: 100%;
-    height: 50vh;
-    -webkit-background-size: cover;
-    -moz-background-size: cover, ;
-    -o-background-size: cover,;
-    /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0
-    filter: grayscale(90%); */
+    background-size: 100%;
+    margin-bottom: 1rem;
+    width: 100.55%;
+    height: 70vh;
+    margin-bottom: 0;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%, ;
+    -o-background-size: 100%,;
   
   }
+  .title {
+    background-color: rgba(173, 166, 166, 0.836);
+    opacity: 0.9;
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .elysianLogo {
+    font-family: 'Edwardian Script ITC';
+    font-size: 3.5rem;
+   
+  }
+  .cateringLogo {
+    font-family: 'Edwardian Script ITC';
+    font-size: 3.5rem;
+  }
+
+  .homeContentGrid {
+    display: grid;
+    grid-template-columns: auto;
+    /* grid-template-rows: 1fr 10rem 1fr; */
+    grid-template-areas: "titleBox"
+                         "mission"  
+                         "slideShow"
+                         "youtube" 
+                         "twitter"
+                         "affiliations";
+    grid-gap: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50rem;
+  
+  }
+  
   .missionStatement {
-  grid-area: mission;
-  width: 100vw;
-  height: 10rem;
-  background-color: black;
-  padding: 3rem 0 0 0;
+   grid-area: mission;
+   margin-bottom: 3rem;
+   width: 100vw;
+   height: 10rem;
+   background-color: black;
+   padding: 1rem 0;
+   color: white;
+  }
+  .affiliations {
+    background-color: black; 
+    padding: 1rem 1rem;
+    margin: 3rem 1rem;
+    display: flex;
+    grid-area: affiliations;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 60vh; 
+  }
+  .com_header {
+    justify-self: stretch;
+    font-family: 'Merriweather', serif;
+    color: white;
+    height: 5rem;
+    width: 100%;
+  }
+  .catholicCommunity {
+    background-image: url(./Images/catholicCommunity.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 15vh;
+    width: 30vw;
+    margin: .5rem;
+    justify-self: center;
+    align-self: center;
+  
+  }
+  .bbbsUtah {
+    background-image: url(./Images/BBBSUtah-logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 30vw;
+    margin: .5rem;
+    justify-self: center;
+    align-self: center;
+  }
+  .voAmerica {
+    background-image: url(./Images/volunteersOfAmerica.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 15vh;
+    width: 32vw;
+    margin: .5rem;
+    justify-self: center;
+    align-self: center;
   }
   .twitter {
     grid-area: twitter;
-    display: grid;
+    justify-self: center;
+    align-self: center;
     justify-content: center;
   }
   .slideShow {
@@ -419,7 +605,7 @@ h3 {
   grid-template-areas: "headShot" 
                        "aboutText";
   margin: 0 0 0 0;
-  height: 110vh;
+  height: 100vh;
 }
 .personalImg {
   grid-area: headShot; 

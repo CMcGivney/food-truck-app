@@ -14,8 +14,8 @@ import './App.css'
 function App() {
   return (
   <>
-   <Container fluid style={{margin: "3em"}}>
     <NavBar/>
+   <Container fluid style={{margin: "3em 0"}}>
      <Switch>
      <Route exact path='/' component={Home} />
      <Route exact path='/about' component={About} />

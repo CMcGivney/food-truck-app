@@ -1,67 +1,112 @@
 import React from 'react'
-import { Button, Form } from 'semantic-ui-react'
-import axios from 'axios'
+import {Form, } from 'semantic-ui-react'
+import emailjs from 'emailjs-com'
 
 
-class ContactForm extends React {
+class ContactForm extends React.Component {
   state = {
-           firstName: '',
-           lastName: '',
+           name: '',
+           email: '',
+           dates: '',
            message: '',
-           sent: false,
-           buttonText: 'Send Message'
+           numGuests: 0
   }
-  
-  resetForm = () => {
-    this.setState({
-        name: '',
-        message: '',
-        email: '',
-        buttonText: 'Message Sent'
-    })
-}
-  formSubmit = (e) => {
-    e.preventDefault()
-  
-    this.setState({
-        buttonText: '...sending'
-    })
 
-    
-  
-    let data = {
-        name: this.state.name,
-        email: this.state.email,
-        message: this.state.message
-    }
-    
-    axios.post('API_URI', data)
-    .then( res => {
-        this.setState({ sent: true }, this.resetForm())
-    })
-    .catch( () => {
-      console.log('Message not sent')
+  resetForm() {
+    this.setState({
+      name: '',
+      email: '',
+      dates: '',
+      message: '',
+      numGuests: 0
     })
   }
+
+handleChange = (e) => {
+  this.setState({ [e.target.name]: e.target.value, })
+}
+
+handleSubmit = (e) => {
+  e.preventDefault();
+ const {name, email, dates, numGuests, message} = this.state
+
+ let templateParams = {
+  from_name: name,
+  from_email: email,
+  to_name: 'cmmcgivney84@gmail.com',
+  date_event: dates,
+  num_guests: numGuests,
+  message_html: message,
+ }
+
+ emailjs.send(
+  'gmail',
+  'template_T9qf6qBd',
+   templateParams,
+  'user_DPXyyf8OCsq80vNDZsRU8'
+ )
+ this.resetForm()
+}
+
+
+
   render() {
     return(
-      <Form>
-      <Form.Field>
-        <label>First Name</label>
-        <input placeholder='First Name' />
-      </Form.Field>
-      <Form.Field>
-        <label>Last Name</label>
-        <input placeholder='Last Name' />
-      </Form.Field>
-      <Form.Field>
-        
-      </Form.Field>
-      <Button type='submit'>Submit</Button>
-    </Form>
+      <Form onSubmit={this.handleSubmit}>
+      {/* <Header.Content as="h3" className="">Elysian Catering</Header.Content> */}
+        <Form.Group>
+         <Form.Input
+         placeholder= "Name"
+         label="Name"
+         name="name"
+         onChange={this.handleChange}
+         value={this.state.name}
+         required
+         />
+         <Form.Input
+         placeholder= "Email"
+         label="Email"
+         name="email"
+         onChange={this.handleChange}
+         value={this.state.email}
+         required
+         />
+         </Form.Group>
+         <Form.Group>
+        <Form.Input
+         name="dates"
+         label="Date of Event"
+         type="date"
+         value={this.state.date}
+         onChange={this.handleChange}
+         required
+         >
+         </Form.Input>
+        <Form.Input
+         name="numGuests"
+         label="Number of Guests"
+         value={this.state.numGuests}
+         onChange={this.handleChange}
+         required
+         >
+         </Form.Input>
+         </Form.Group>
+         <Form.TextArea
+         placeholder= "Message"
+         label="Message"
+         name="message"
+         size="medium"
+         onChange={this.handleChange}
+         value={this.state.message}
+         required
+         />
+         <Form.Button color="green">Submit</Form.Button>
+       
+      </Form>
 
     )
     }
-}
+  }
+  
 
 export default ContactForm

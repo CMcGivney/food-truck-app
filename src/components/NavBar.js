@@ -8,7 +8,7 @@ class Navbar extends React.Component {
     return (
       <>
        
-         <Menu style={{backgroundColor:"black"}} inverted pointing secondary fixed="top">
+         <Menu style={{backgroundColor:"black", boxShadow: "0 2px 2px -2px rgba(0,0,0,.2)"}} inverted pointing fixed="top">
           <Link to='/'>
             <Menu.Item
               name='Home'
