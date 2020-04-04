@@ -32,12 +32,24 @@ const Home = () => (
       <Header.Content as="h3" style={{margin: "0 1em .5em 1em"}}>Food should taste good. It should feel good. It should do good things for you and the world around you.</Header.Content>
       <Header.Content as="p">~ The Elysian Catering Promise ~</Header.Content>
    </div>
-   <div className='twitter'>
+    <div className="twitterContainer">
+     <div className="mediaTitle">
+       <Header.Content as="h3" className="aboutHead">Want to know where we are cooking? </Header.Content>
+       <Header.Content as="h5" className="aboutMeta">Follow us on Twitter!</Header.Content>
+     </div>
+     <div className='twitter'>
       <Twitter style={{"alignText": "center"}}/>
-   </div>
-   <div className="youtube">
-    <YouTube id="2B9ZMw1kp9g" appendSrc="?autoplay=1&loop=1&modestbranding=1"/>
+     </div>
     </div>
+    <div className="youtubeContainer">
+     <div className="mediaTitle">
+       <Header.Content as="h3" className="aboutHead">Want to see what we are up too? </Header.Content>
+       <Header.Content as="h5" className="aboutMeta">Subscribe to Chef AG's YouTube!</Header.Content>
+     </div>
+    <div className="youtube">
+      <YouTube id="2B9ZMw1kp9g" appendSrc="?autoplay=1&loop=1&modestbranding=1&samesite=none"/>
+     </div>
+   </div>
  </div>
   
 </>

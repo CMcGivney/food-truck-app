@@ -6,7 +6,7 @@ import TwitterEvents from './TwitterEvents'
 const Press = () => (
   <>
        <div className="eventHead">
-        <Header.Content as="h1" >Upcoming Events</Header.Content>
+        <Header.Content as="h1" className="eventHead">Upcoming Events</Header.Content>
        </div>
   
        <div className="twitter" >
