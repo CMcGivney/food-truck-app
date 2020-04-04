@@ -8,11 +8,11 @@ const Press = () => (
        <div className="eventHead">
         <Header.Content as="h1" >Upcoming Events</Header.Content>
        </div>
-    <div className="eventContainer"> 
+  
        <div className="twitter" >
-        <TwitterEvents style={{"alignText": "center"}}/>
+        <TwitterEvents />
        </div>
-    </div>
+   
   </>
 )
 
