@@ -46,9 +46,9 @@ handleSubmit = (e) => {
 
  emailjs.send(
   'gmail',
-  (process.env.TEMPLATE_NUM),
+  (process.env.REACT_APP_TEMPLATE_NUM),
    templateParams,
-  (process.env.USER_NUM)
+  (process.env.REACT_APP_USER_NUM)
  )
  this.resetForm()
 }
@@ -56,7 +56,7 @@ handleSubmit = (e) => {
 
 
   render() {
-  return(
+   return(
    
       <Form onSubmit={this.handleSubmit}>
       {/* <Header.Content as="h3" className="">Elysian Catering</Header.Content> */}
