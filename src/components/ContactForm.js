@@ -44,7 +44,7 @@ handleSubmit = (e) => {
   message_html: message,
  }
 
- emailjs.sendForm('default_service', (process.env.REACT_APP_TEMPLATE_NUM), templateParams, (process.env.REACT_APP_USER_NUM)
+ emailjs.send('default_service', (process.env.REACT_APP_TEMPLATE_NUM), templateParams, (process.env.REACT_APP_USER_NUM)
    ).then((response) => {
    console.log('SUCCESS!', response.status, response.text);
    }, (err) => {
