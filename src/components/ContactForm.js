@@ -29,6 +29,8 @@ class ContactForm extends React.Component {
  
 handleChange = (e) => {
   this.setState({ [e.target.name]: e.target.value, })
+  console.log(process.env.NODE_ENV)
+  console.log(process.env.REACT_APP_TEMPLATE_NUM)
 }
 
 handleSubmit = (e) => {
