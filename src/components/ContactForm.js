@@ -45,11 +45,15 @@ handleSubmit = (e) => {
  }
 
  emailjs.send(
-  'gmail',
+  'gasuntagaribay18@gmail.com',
   (process.env.REACT_APP_TEMPLATE_NUM),
    templateParams,
   (process.env.REACT_APP_USER_NUM)
- )
+ ).then((response) => {
+  console.log('SUCCESS!', response.status, response.text);
+}, (err) => {
+  console.log('FAILED...', err);
+})
  this.resetForm()
 }
 
