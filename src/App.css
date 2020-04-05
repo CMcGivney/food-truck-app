@@ -643,26 +643,54 @@ h3 {
     justify-self: center;
     align-self: center;
   }
-  
-  .slideShow {
-    grid-area: slideShow;
-    width: 100%;
-  }
-  .slide-container {
-    width: 90vw;
-    margin: auto; 
-  }
-  
-  h3 {
-    text-align: center; }
-  
-  .each-slide > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    height: 50vh;
-  }
+  /** Slider Css **/
+.slide-container {
+  width: 50vw;
+  margin: auto; }
+
+h3 {
+  text-align: center; }
+
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+}
+
+.each-slide span {
+  padding: 20rem;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.each-fade {
+  display: flex;
+}
+
+.each-fade .image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.each-fade .image-container img {
+  width: 100%;
+}
+
+.each-fade h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}
   /* About Page layout*/
 .aboutMeContainer {
   display: grid;
