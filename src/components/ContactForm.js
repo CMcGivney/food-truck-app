@@ -44,16 +44,16 @@ handleSubmit = (e) => {
   message_html: message,
  }
 
- emailjs.send(
-  'gasuntagaribay18@gmail.com',
+ emailjs.sendForm(
+   'asuntagaribay18@gmail.com',
   (process.env.REACT_APP_TEMPLATE_NUM),
    templateParams,
   (process.env.REACT_APP_USER_NUM)
- ).then((response) => {
-  console.log('SUCCESS!', response.status, response.text);
-}, (err) => {
-  console.log('FAILED...', err);
-})
+   ).then((response) => {
+   console.log('SUCCESS!', response.status, response.text);
+   }, (err) => {
+    console.log('FAILED...', err);
+   })
  this.resetForm()
 }
 
