@@ -2,6 +2,7 @@ import React from 'react'
 import { withRouter} from 'react-router-dom'
 import {Form, } from 'semantic-ui-react'
 import emailjs from 'emailjs-com'
+require('dotenv').config()
 
 
 class ContactForm extends React.Component {
@@ -26,11 +27,10 @@ class ContactForm extends React.Component {
     this.props.history.push("/")
   }
   
+
  
 handleChange = (e) => {
   this.setState({ [e.target.name]: e.target.value, })
-  console.log(process.env.NODE_ENV)
-  console.log(process.env.REACT_APP_TEMPLATE_NUM)
 }
 
 handleSubmit = (e) => {
@@ -46,7 +46,7 @@ handleSubmit = (e) => {
   message_html: message,
  }
 
- emailjs.send('default_service', (process.env.REACT_APP_TEMPLATE_NUM), templateParams, (process.env.REACT_APP_USER_NUM)
+ emailjs.send('asuntagaribay18@gmail.com', (process.env.REACT_APP_TEMPLATE_ID), templateParams, (process.env.REACT_APP_USER_ID)
    ).then((response) => {
    console.log('SUCCESS!', response.status, response.text);
    }, (err) => {
