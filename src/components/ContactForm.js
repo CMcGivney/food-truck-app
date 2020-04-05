@@ -46,7 +46,7 @@ handleSubmit = (e) => {
   message_html: message,
  }
 
- emailjs.send('asuntagaribay18@gmail.com', (process.env.REACT_APP_TEMPLATE_ID), templateParams, (process.env.REACT_APP_USER_ID)
+ emailjs.send('asuntagaribay18@gmail.com', "template_G85KdgEv", templateParams, "user_8MVNXasymY2fplvCKCOlQ"
    ).then((response) => {
    console.log('SUCCESS!', response.status, response.text);
    }, (err) => {
