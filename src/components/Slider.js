@@ -17,6 +17,7 @@ import chartBoard from '../Images/chartBoard.jpeg'
 import dessertOne from '../Images/dessertOne.jpeg'
 import dessertTwo from '../Images/dessertTwo.jpeg'
 import dessertThree from '../Images/dessertThree.jpeg'
+import {Image,} from "semantic-ui-react"
 
  
 
@@ -41,7 +42,7 @@ const Slideshow = () => {
       <div className="slide-container">
         <Zoom {...zoomOutProperties}>
           {
-            images.map((each, index) => <img key={index} style={{width: "100%"}} src={each} alt={images[index]} />)
+            images.map((each, index) => <Image fluid key={index} style={{width: "100%" }} src={each} alt={images[index]} />)
           }
         </Zoom>
       </div>

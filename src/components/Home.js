@@ -19,9 +19,9 @@ const Home = () => (
      <Header.Content as="h3" className="motto">"You Dream It & We Do It!"</Header.Content>
     </div>
    </div>
-   <div className="slideShow">
-     <SlideShow />
-   </div>
+   
+     <SlideShow className="slideShow"/>
+   
        <div className="affiliations">
          <Header.Content as="h3" className="com_header">Community Affiliations</Header.Content>
          <a href="https://bbbsu.org/" alt="Big Brother Big Sister of Utah Link"><div className="bbbsUtah"></div></a>
