@@ -15,7 +15,7 @@ function App() {
   return (
   <>
     <NavBar/>
-   <Container fluid style={{margin: "3em 0"}}>
+   <Container fluid style={{padding: "0"}}>
      <Switch>
      <Route exact path='/' component={Home} />
      <Route exact path='/about' component={About} />
