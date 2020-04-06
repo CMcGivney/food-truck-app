@@ -7,14 +7,14 @@
 .navBar {
   color: white;
   background-color: black;
-  font-size: .5rem;
+  font-size: .5em;
   box-shadow: 0 2px 2px -2px rgba(107, 105, 105, 0.2);
 }
 /*Home page style*/
 .homeContentGrid {
   display: grid;
   grid-template-columns: auto;
-  /* grid-template-rows: 1fr 10rem 1fr; */
+  grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas: "titleBox"
                        "mission"  
                        "slideShow"
@@ -182,6 +182,13 @@
 }
 .slideShow {
   grid-area: slideShow;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  justify-content: center;
+  align-content: center
 }
 /* About Page layout*/
 .aboutTitle {
@@ -489,7 +496,7 @@ h3 {
 .homeContentGrid {
   display: grid;
   grid-template-columns: auto;
-  /* grid-template-rows: 1fr 10rem 1fr; */
+  /* grid-template-rows: auto auto 300px auto auto auto; */
   grid-template-areas: "titleBox"
                        "mission"  
                        "slideShow"
@@ -645,6 +652,13 @@ h3 {
     align-self: center;
   }
   /** Slider Css **/
+  .slideShow {
+    grid-area: slideShow;
+    /* display: flex;
+    height: 40vh;
+    width: 100%;
+    justify-content: center */
+  }
 .slide-container {
   width: 90vw;
   margin: auto; }

@@ -2,6 +2,7 @@ import React from 'react'
 import {Header,} from 'semantic-ui-react'
 import Twitter from './Twitter.js'
 import SlideShow from './Slider.js'
+// import ImageCarousel from './Carousel.js'
 import YouTube from 'react-youtube-embed'
 
 //live.websites.hibu.com.
@@ -19,9 +20,9 @@ const Home = () => (
      <Header.Content as="h3" className="motto">"You Dream It & We Do It!"</Header.Content>
     </div>
    </div>
-   
-     <SlideShow className="slideShow"/>
-   
+     <div className="slideShow">
+      <SlideShow />
+     </div>
        <div className="affiliations">
          <Header.Content as="h3" className="com_header">Community Affiliations</Header.Content>
          <a href="https://bbbsu.org/" alt="Big Brother Big Sister of Utah Link"><div className="bbbsUtah"></div></a>
