@@ -42,7 +42,7 @@ const Slideshow = () => {
       <div className="slide-container">
         <Zoom {...zoomOutProperties}>
           {
-            images.map((each, index) => <Image fluid key={index} style={{width: "100%" }} src={each} alt={images[index]} />)
+            images.map((each, index) => <Image fluid key={index} style={{width: "100%"}} src={each} alt={images[index]} />)
           }
         </Zoom>
       </div>

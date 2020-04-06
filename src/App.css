@@ -182,6 +182,12 @@
 }
 .slideShow {
   grid-area: slideShow;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  overflow: hidden;
+  height: auto;
+  width: 90vw;
 }
 /* About Page layout*/
 .aboutTitle {
@@ -757,5 +763,18 @@ h3 {
   align-self: center;
   text-align: center;
   margin: 1rem;
+}
+}
+@media only screen and (max-height: 375px) {
+  .slide-container {
+    width: 60vw;
+    margin: auto; }
+  
+  .slideShow {
+  grid-area: slideShow;
+  display: flex;
+  overflow: hidden;
+  /* height: 90vh;
+  width: 50vw; */
 }
 }
