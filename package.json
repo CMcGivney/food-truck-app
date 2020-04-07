@@ -26,7 +26,7 @@
     "react-responsive-carousel": "^3.1.56",
     "react-responsive-embed": "^2.1.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "^3.4.1",
     "react-slideshow-image": "^1.4.0",
     "react-twitter-embed": "3.0.3",
     "react-youtube-embed": "^1.0.3",
