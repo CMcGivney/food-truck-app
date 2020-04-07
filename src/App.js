@@ -15,14 +15,14 @@ function App() {
   return (
   <>
     <NavBar/>
-   <Container fluid style={{padding: "0"}}>
-     <Switch>
-     <Route exact path='/' component={Home} />
-     <Route exact path='/about' component={About} />
-     <Route exact path='/FAQ' component={FAQ} />
-     <Route exact path='/Menu' component={Menu} />
-     <Route exact path='/Events' component={Events} />
-     <Route exact path='/Contact' component={Contact} />
+     <Container style={{marginTop: "3rem",}}>
+      <Switch>
+       <Route exact path='/' component={Home} />
+       <Route exact path='/about' component={About} />
+       <Route exact path='/FAQ' component={FAQ} />
+       <Route exact path='/Menu' component={Menu} />
+       <Route exact path='/Events' component={Events} />
+       <Route exact path='/Contact' component={Contact} />
      </Switch>
     </Container>
     <Footer/>
